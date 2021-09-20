@@ -20,7 +20,8 @@ const UploadForm = () => {
         <form >
             <label>
                 <input className="uploaded" type="File" onChange={handleclick} />
-                <span>+</span>
+                <span style={{backgroundColor: 'ButtonHighlight' , border: 'solid', borderRadius:'circular'}}>+</span>
+            
             </label>
             <div className="output">
                 {error && <div className="error" >{error} </div>}
