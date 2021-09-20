@@ -20,7 +20,7 @@ const UploadForm = () => {
         <form >
             <label>
                 <input className="uploaded" type="File" onChange={handleclick} />
-                <span style={{backgroundColor: 'ButtonHighlight' , border: 'solid', borderRadius:'circular'}}>+</span>
+                <span style={{backgroundColor: 'ButtonHighlight' , border: 'dashed', borderRadius:'circular' }}>+</span>
             
             </label>
             <div className="output">
