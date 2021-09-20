@@ -1,16 +1,20 @@
 import React from 'react';
-const Modal = ({selecctedImg}) => {
+import {motion} from 'framer-motion';
+const Modal = ({setSelectedImg, selecctedImg}) => {
     const handleClick = (e) => {
         if(e.target.classList.conatin('backdrop')){
-        selecctedImg(null);
+        setSelectedImg(null);
         }
         
 
     }
     return (
-    <div className="backdrop"  onClick={handleClick}>
-        <img src={selecctedImg} alt="enlarged pic"/>
-    </div>
+    <motion.div className="backdrop"  onClick={handleClick}
+    initial={{OPACITY: 0}}
+        animate={{opacity: 1}}>
+
+        <motion.img src={selecctedImg} alt="enlarged pic"/>
+    </motion.div>
     )
 }
 

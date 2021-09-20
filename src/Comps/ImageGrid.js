@@ -3,10 +3,10 @@ import useFirestore from '../Hooks/UseFirestore';
 import { motion } from 'framer-motion';
 const ImageGrid = ( {setSelectedImg}) => {
     const { docs } = useFirestore('images');
-    console.log(docs);
+  
     return (
         <div className="img-grid " >
-            Images
+           
             { docs && docs.map(doc => (
                 <motion.div className="img-wrap"  key={doc.id}
                 layout   
