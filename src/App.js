@@ -10,7 +10,7 @@ function App() {
  
   const [selectedImg, setSelectedImg] = useState(null);  
   return (
-    <div className="background " style={{backgroundColor: 'aliceblue'}} >
+    <div className="background " style={{backgroundColor: 'aliceblue', Color: '#322d36'}} >
    <div className="App"> 
     <Title />
      <UploadForm />
