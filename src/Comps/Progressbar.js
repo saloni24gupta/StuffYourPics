@@ -15,7 +15,7 @@ useEffect(()=> {
  
    return (
     
-        <motion.div className='progress-bar' initial={{width: 0}} animate={{ width: progress + '%' }} style={{padding: '3px', margin: '3px' ,backgroundColor: 'cyan', height: '5px' ,background: 'var(--primary)'}}>progress bar</motion.div>
+        <motion.div className='progress-bar' initial={{width: 0}} animate={{ width: progress + '%' }}>progress bar</motion.div>
     )
 }
 export default ProgressBar;
