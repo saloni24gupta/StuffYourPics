@@ -13,7 +13,7 @@ useEffect(() => {
 
  
    return (
-        <motion.div className='progress-bar' initial={{width: 0}} animate={{ width: progress + '%' }}>progress bar</motion.div>
+        <motion.div className='progress-bar' initial={{width: 0}} animate={{ width: progress + '%' }}></motion.div>
          );
 }
 export default ProgressBar;
